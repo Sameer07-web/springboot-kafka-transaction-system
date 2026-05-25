@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Transaction {
+
     private long senderId;
     private long recipientId;
     private float amount;
@@ -43,6 +44,8 @@ public class Transaction {
 
     @Override
     public String toString() {
-        return "Transaction {senderId=" + senderId + ", recipientId=" + recipientId + ", amount=" + amount + "}";
+        return "Transaction {senderId=" + senderId +
+                ", recipientId=" + recipientId +
+                ", amount=" + amount + "}";
     }
 }
